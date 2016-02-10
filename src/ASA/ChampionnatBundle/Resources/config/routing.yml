@@ -1,0 +1,24 @@
+asa_championnat_home:
+    path:      /home
+    defaults:  { _controller: ASAChampionnatBundle:Default:index }
+    
+asa_championnat_new:
+    path:      /actualite/{slug}
+    defaults:  { _controller: ASAChampionnatBundle:Default:showNew }
+    
+asa_championnat_equipes:
+    path:      /nos-equipes
+    defaults:  { _controller: ASAChampionnatBundle:Team:showListTeam }
+    
+asa_bureau:
+    path:      /notre-bureau
+    defaults:  { _controller: ASAChampionnatBundle:Default:showListBureau }
+    
+asa_evenement:
+    path:      /agenda
+    defaults:  { _controller: ASAChampionnatBundle:Default:showListEvenements }
+    
+asa_team:
+    path:      /equipe/{slug}
+    defaults:  { _controller: ASAChampionnatBundle:Team:showTeam }
+    

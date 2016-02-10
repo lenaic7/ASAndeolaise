@@ -1,0 +1,27 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 août 2015, 21:15:39
+    Author     : Lénaïc Charles
+*/
+
+#right ul.nav-tabs > li.active > a{
+    color: red;
+    border-radius: 0px;
+}
+
+div ul.nav-tabs{
+    border-top: 4px solid maroon;
+}
+
+.tab-content #agenda{
+    padding: 5px;
+}
+
+#agenda .dateEv{
+    color: red;
+    font-weight: bold;
+}

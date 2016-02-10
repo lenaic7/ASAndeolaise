@@ -1,0 +1,24 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/asachampionnat/css/right.css') }}" type="text/css" media="all" />
+{% endblock %}
+{% block right %}
+    <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a class="fa fa-calendar fa-2x" href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab"></a></li>
+            <li role="presentation"><a class="fa fa-dribbble fa-2x" href="#resultat" aria-controls="profile" role="tab" data-toggle="tab"></a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="agenda">
+                {% for evenement in evenements %}
+                    <span class="dateEv">{{evenement.date|date( "d/m/y")}}</span>
+                    <span class="titreEv"> : {{evenement.name}}</span>            
+                {% endfor %}
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="resultat">Azerty2</div>
+        </div>
+
+    </div>
+{% endblock %}

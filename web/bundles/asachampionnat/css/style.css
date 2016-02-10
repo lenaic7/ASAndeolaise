@@ -1,0 +1,110 @@
+@import "http://fonts.googleapis.com/css?family=Abril+Fatface";
+@import "http://fonts.googleapis.com/css?family=Cantarell";
+
+body {
+    background: rgba(0, 0, 0, 0) url("http://s3.static-clubeo.com/uploads/as-andeolaise/themes/default/images/background__nrfutu.jpg") no-repeat scroll 0 0;
+    margin: 0 auto;
+}
+h2 {
+    display: inline;
+    margin: 0;
+}
+section#global {
+    background: #fff none repeat scroll 0 0;
+    margin: 75px auto;
+    overflow: hidden;
+    padding-top: 5px;
+    width: 80%;
+}
+
+#header_top {
+    background-color: #c50000;
+    display: block;
+    height: 20px;
+    text-align: center;
+}
+header {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 3px solid #c50000;
+    color: #fff;
+    font-family: "Cantarell",cursive;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+header img {
+    float: left;
+    height: 72px;
+    margin-left: 10%;
+}
+span#news {
+    background-color: grey;
+}
+#sliderHome {
+    display: block;
+}
+.pgwSlider {
+    display: inline-block;
+}
+.clearout {
+    clear: both;
+    height: 20px;
+}
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+    display: none;
+}
+.nbs-flexisel-container {
+    max-width: 100%;
+    position: relative;
+}
+.nbs-flexisel-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    width: 9999px;
+}
+.nbs-flexisel-inner {
+    background: #fcfcfc -moz-linear-gradient(center top , #fcfcfc 0%, #eee 100%) repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+.nbs-flexisel-item {
+    cursor: pointer;
+    float: left;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.nbs-flexisel-item img {
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-height: 45px;
+    max-width: 100px;
+    position: relative;
+    width: 100%;
+}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+    cursor: pointer;
+    height: 22px;
+    opacity: 0.5;
+    position: absolute;
+    width: 22px;
+    z-index: 100;
+}
+.nbs-flexisel-nav-left {
+    background: rgba(0, 0, 0, 0) url("../images/button-previous.png") no-repeat scroll 0 0;
+    left: 10px;
+}
+.nbs-flexisel-nav-right {
+    background: rgba(0, 0, 0, 0) url("../images/button-next.png") no-repeat scroll 0 0;
+    right: 5px;
+}

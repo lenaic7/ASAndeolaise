@@ -1,0 +1,20 @@
+{% extends 'ASAChampionnatBundle::layout.html.twig' %}
+{% block body %}
+    <section id="right">
+        <h2><span>{{ new.title }} </span></h2>
+        {% if slugprev != NULL %}
+            <span><a href=" {{ path('asa_championnat_new', {'slug' : slugprev }) }}">Actualité précèdente</a></span>
+        {% endif %}
+        {% if slugnext != NULL %}
+            <span><a href=" {{ path('asa_championnat_new', {'slug' : slugnext }) }}">Actualité suivante</a></span>
+        {% endif %}
+
+        <div>{{ date }}</div>
+        <div>
+            {{ new.content|raw }}
+        </div>
+    </section>
+
+
+
+{% endblock %}

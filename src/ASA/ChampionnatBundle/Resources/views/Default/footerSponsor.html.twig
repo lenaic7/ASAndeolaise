@@ -1,0 +1,13 @@
+{% block javascripts %}
+    <script src="{{ asset('bundles/asachampionnat/js/jquery.flexisel.js') }}" type="text/javascript"></script>
+{% endblock %}
+{% block footer %}
+    <footer>     
+        <ul id="flexiselDemo1"> 
+            {% for sponsor in sponsors %}
+                <li><img src="{{ sponsor.logo}}" alt="{{ sponsor.name }}"/></li>
+                {% endfor %}                                                    
+        </ul>
+        <div class="clearout"></div> 
+    </footer>
+{% endblock %}

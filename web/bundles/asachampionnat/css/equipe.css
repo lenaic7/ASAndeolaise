@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 juil. 2015, 16:40:00
+    Author     : Lénaïc Charles
+*/
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+
+section#right{
+    padding-top: 5px;
+}
+
+
+div.blockEquipe{
+    border:1px;
+    border: 1px solid #cbcbcb;
+    -moz-box-shadow: 5px 5px 1px 0px #cfcfcf;
+    -webkit-box-shadow: 5px 5px 1px 0px #cfcfcf;
+    -o-box-shadow: 5px 5px 1px 0px #cfcfcf;
+    box-shadow: 5px 5px 1px 0px #cfcfcf;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#cfcfcf, Direction=134, Strength=1);
+}
+
+div.blockEquipe ul.listeEquipe{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    padding: 0;
+    overflow: hidden;
+    padding-top: 10px; 
+}
+
+div.blockEquipe ul.listeEquipe li{ 
+    border: 1px solid #cbcbcb;
+    display: inline-block;
+    border-radius: 10px;
+    height: 350px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+div.listeEquipe{
+    text-align: center;
+}
+
+.blockEquipe span.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: block;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #f4f4f4 0px, #e5e5e5 100%) repeat scroll 0 0;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 25px;
+}
+
+.blockEquipe span.title a{
+    color: #c50000;
+}
+
+.team h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-top: 4px #c50000 solid;
+    border-bottom: 4px #c50000 solid;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.team h3 span.noBold{
+    font-weight: normal;
+}
+
+.team h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.team img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.blockEquipe ul.listeEquipe .resultats span{
+    margin-bottom: 5px;
+}
+
+span.victoire{
+    background-color: green;
+    padding: 5px;
+    color: #fff;
+}
+
+span.defaite{
+    background-color: red;
+    padding: 5px;
+    color: #fff;
+}
+
+.color-red{
+    color: #c50000;
+    font-weight: bold;
+}
+
+
+

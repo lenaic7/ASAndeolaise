@@ -1,0 +1,200 @@
+<?php
+
+namespace ASA\ChampionnatBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Rencontre
+ *
+ * @ORM\Table()
+ * @ORM\Entity(repositoryClass="ASA\ChampionnatBundle\Entity\RencontreRepository")
+ */
+class Rencontre {
+
+    /**
+     * @ORM\ManyToOne(targetEntity="ASA\ChampionnatBundle\Entity\Equipe", inversedBy="resultats")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $equipe;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adversaire", type="string", length=255)
+     */
+    private $adversaire;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lieux", type="string", length=255)
+     */
+    private $lieux;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pointsAsa", type="integer")
+     */
+    private $pointsAsa;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="pointsAdv", type="integer")
+     */
+    private $pointsAdv;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="resultat", type="string", length=1)
+     */
+    private $resultat;
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId() {
+        return $this->id;
+    }
+
+    /**
+     * Set adversaire
+     *
+     * @param string $adversaire
+     * @return Rencontre
+     */
+    public function setAdversaire($adversaire) {
+        $this->adversaire = $adversaire;
+
+        return $this;
+    }
+
+    /**
+     * Get adversaire
+     *
+     * @return string 
+     */
+    public function getAdversaire() {
+        return $this->adversaire;
+    }
+
+    /**
+     * Set lieux
+     *
+     * @param string $lieux
+     * @return Rencontre
+     */
+    public function setLieux($lieux) {
+        $this->lieux = $lieux;
+
+        return $this;
+    }
+
+    /**
+     * Get lieux
+     *
+     * @return string 
+     */
+    public function getLieux() {
+        return $this->lieux;
+    }
+
+    /**
+     * Set pointsAsa
+     *
+     * @param integer $pointsAsa
+     * @return Rencontre
+     */
+    public function setPointsAsa($pointsAsa) {
+        $this->pointsAsa = $pointsAsa;
+
+        return $this;
+    }
+
+    /**
+     * Get pointsAsa
+     *
+     * @return integer 
+     */
+    public function getPointsAsa() {
+        return $this->pointsAsa;
+    }
+
+    /**
+     * Set pointsAdv
+     *
+     * @param integer $pointsAdv
+     * @return Rencontre
+     */
+    public function setPointsAdv($pointsAdv) {
+        $this->pointsAdv = $pointsAdv;
+
+        return $this;
+    }
+
+    /**
+     * Get pointsAdv
+     *
+     * @return integer 
+     */
+    public function getPointsAdv() {
+        return $this->pointsAdv;
+    }
+
+    /**
+     * Set resultat
+     *
+     * @param string $resultat
+     * @return Rencontre
+     */
+    public function setResultat($resultat) {
+        $this->resultat = $resultat;
+
+        return $this;
+    }
+
+    /**
+     * Get resultat
+     *
+     * @return string 
+     */
+    public function getResultat() {
+        return $this->resultat;
+    }
+
+    /**
+     * Set equipe
+     *
+     * @param \Equipe $equipe
+     * @return Rencontre
+     */
+    public function setEquipe(Equipe $equipe) {
+        $this->equipe = $equipe;
+
+        return $this;
+    }
+
+    /**
+     * Get equipe
+     *
+     * @return \ASA\ChampionnatBundle\Entity\Equipe 
+     */
+    public function getEquipe() {
+        return $this->equipe;
+    }
+
+}

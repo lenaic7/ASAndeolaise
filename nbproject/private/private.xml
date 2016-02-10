@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Entity/EquipeRepository.php</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/AdminBundle/Resources/views/Default/equipe.html.twig</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/AdminBundle/Resources/views/addTeam.html.twig</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Form/EquipeType.php</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Resources/views/Equipe/showTeam.html.twig</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Controller/TeamController.php</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Resources/public/css/equipe.css</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/AdminBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/AdminBundle/Controller/DefaultController.php</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Entity/BureauRepository.php</file>
+            <file>file:/C:/wamp/www/Asandeolaise/src/ASA/ChampionnatBundle/Resources/config/routing.yml</file>
+        </group>
+    </open-files>
+</project-private>

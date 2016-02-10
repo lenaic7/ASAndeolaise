@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}AS.Andéolaise{% endblock %}</title>
+        {% block javascripts %}  
+            <script src="{{ asset('bundles/asachampionnat/js/jquery-1.11.3.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/asachampionnat/js/bootstrap.min.js') }}" type="text/javascript"></script>
+        {% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="{{ asset('bundles/asachampionnat/css/menu.css') }}" type="text/css" media="all" />
+            <link rel="stylesheet" href="{{ asset('bundles/asachampionnat/css/style.css') }}" type="text/css" media="all" />
+            <link rel="stylesheet" href="{{ asset('bundles/asachampionnat/css/sliderNews.css') }}" type="text/css" media="all" />
+            <link rel="stylesheet" href="{{ asset('bundles/asachampionnat/css/bootstrap.min.css') }}" type="text/css" media="all" />
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <header>
+            <div id='header_top'>
+                Bienvenue sur le site de l'A.S. Andéolaise
+            </div>
+            <img src="{{ asset('bundles/asachampionnat/images/logo_asa.PNG') }}" /> 
+            {{ include('ASAChampionnatBundle:Default:menu.html.twig') }}
+        </header>
+        <section id="global">
+            <section id="left" class="col-lg-8">
+                {% block left %} {% endblock %}
+            </section>
+            <section id="right" class="col-lg-4">
+                {% block right %}
+                    {{ render(controller(
+        'ASAChampionnatBundle:Default:listEvenements'
+    )) }}
+                </section>
+            {% endblock %}
+        </section>
+        <footer>
+            {{ render(controller(
+        'ASAChampionnatBundle:Default:sponsor'
+    )) }} 
+        </footer>
+
+    </body>
+</html>
+{{ tinymce_init() }}
